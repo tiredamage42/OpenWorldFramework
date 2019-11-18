@@ -34,12 +34,12 @@ for each cell in the world, the scene name will be as follows:
 (X) _ (Y) @ LOD (I) @OW_ (WorldScene)
 
 e.g.:  
-    *0_1@LOD0@OW_Townsville
+    * 0_1@LOD0@OW_Townsville
 
-where: 
-    (X) _ (Y) is the cell for the scene
-    (I) is the LOD level for that scene, either 0 or 1
-    (WorldScene) is the name of the cell
+where:  
+(X) _ (Y) is the cell for the scene  
+(I) is the LOD level for that scene, either 0 or 1  
+(WorldScene) is the name of the cell  
     
 if you want to change the name of the cell make sure to keep everything before ' @OW_ ' the way it is.  
 also remember to change both lod versions' names
