@@ -5,7 +5,7 @@ A framework for open world style scene streaming in Unity
 * Requires the Unity Tools Module (included in repository).
 
 ***
-###SETUP:
+### SETUP:
 
 the entire world is split up into scenes that represent every cell in the grid
 for each (A)x(A) area.  where A is the world unit cell size specified in the settings object
@@ -13,7 +13,8 @@ for each (A)x(A) area.  where A is the world unit cell size specified in the set
 for each cell, there are two scenes, LOD0 and LOD1. to load varying detail based on distance
 
 ***
-###SCENE SETTINGS SCENE:
+### SCENE SETTINGS SCENE:
+
 As a base for the entire world, there is a Settings Scene that is always loaded,
     named: __OpenWorldSettingsScene
 
@@ -26,7 +27,7 @@ directional lights / weather systems or anything of that sort that should persis
 should be kept in that scene
 
 ***
-###SCENE NAMING CONVENTION:
+### SCENE NAMING CONVENTION:
 
 for each cell in teh world, the scene name will be as follows:
 
@@ -38,15 +39,14 @@ e.g.:
 where: 
     (X) _ (Y) is the cell for the scene
     (I) is the LOD level for that scene, either 0 or 1
-    
     (WorldScene) is the name of the cell
     
-        note: if you want to change the name of the cell make sure to keep everything before
-            ' @OW_ ' the way it is.
-            also remember to change both lod versions' names
+    note: if you want to change the name of the cell make sure to keep everything before ' @OW_ ' the way it is.
+    also remember to change both lod versions' names
 
 ***
-###RUNTIME:
+### RUNTIME:
+
 when at a distance, LOD1 is loaded (terrain, big landmark objects)
 when closer, LOD0 is loaded as well (items, navmesh stuff, etc...) 
 
@@ -54,6 +54,7 @@ grids around the calculated player cell are loaded and unloaded based on teh dis
 the current player cell is set to the cell where the camera is currently
 
 ***
-###NOTE:
+### NOTE:
+
 -all scenes created are added to the build settings for the project automatically
 -system currently only works for positive cells: (0,0) and above
